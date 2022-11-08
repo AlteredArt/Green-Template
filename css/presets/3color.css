@@ -5,10 +5,10 @@
 /* h1, h2, h3, h4, h5, h6 {color: var(--primary);} */
 /* p, label {color: var(--primary);} */
 /* body {background-color: var(--secondary)} */
-a {color: var(--primary);}
+/* a {color: var(--primary);}
 a:hover {color: var(--primary);} 
 a:visited {color: var(--primary);}
-li {color: var(--primary);}
+li {color: var(--primary);} */
 
 /* ROOT THEME */
 :root {

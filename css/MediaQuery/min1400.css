@@ -1,0 +1,214 @@
+/*--------------------------------------------------------------
+>>> 1400
+----------------------------------------------------------------*/
+
+@media only screen and (min-width: 1400px) {
+
+    /*--------------------------------------------------------------
+    >>> LAYOUTS SAVE 
+    --------------------------------------------------------------*/
+    .page-body {background-color: var(--secondary);}
+    .container {min-width: 100%;}
+ 
+    .btn {
+        background-color: var(--green);
+        padding: 1rem;
+        cursor: pointer;
+        font-size: 1.2rem;
+    } 
+
+    .left-half-panel, .right-half-panel {min-width: 50%;}
+    .right-half-panel {padding-top: 5rem;}
+
+    .twocol {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        max-width: 70%;
+        padding: 2rem 0;
+        margin: 0 auto;
+    
+    }
+    /*--------------------------------------------------------------
+    >>> LAYOUTS SAVE END
+    --------------------------------------------------------------*/
+
+
+
+
+
+    /*--------------------------------------------------------------
+    >>> BODY
+    --------------------------------------------------------------*/
+
+    .nachi {
+        margin-top:-6rem;
+        max-width: 100%;
+    }
+
+
+    .services-list {
+        list-style-type: none;
+        margin: 0 0 2rem 0;
+        line-height: 2rem;
+    }
+
+
+
+    .image-gallery {
+        display: flex;
+      }
+
+      .image-gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+      }
+      
+      .image-gallery > li {
+        flex-basis: 350px; /* width: 350px; */
+      }
+      
+      .image-gallery li img {
+        object-fit: cover;
+        max-width: 100%;
+        height: auto;
+        vertical-align: middle;
+        border-radius: 5px;
+      }
+
+      .image-gallery::after {
+        content: "";
+        flex-basis: 350px;
+      }
+
+      .image-gallery > li {
+        /* ... */
+        position: relative;
+        cursor: pointer;
+      }
+      .overlay {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: rgba(57, 57, 57, 0.502);
+        top: 0;
+        left: 0;
+        transform: scale(0);
+        transition: all 0.2s 0.1s ease-in-out;
+        color: #fff;
+        border-radius: 5px;
+        /* center overlay text */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      
+      /* hover */
+      .image-gallery li:hover .overlay {
+        transform: scale(1);
+      }
+
+
+
+
+
+
+
+
+    .lineout-container {
+        background-color: var(--green);
+    }
+
+  
+    .certifications-container {
+        min-height: 150px;
+        background-color: var(--green);
+        text-align: center;
+        padding-top: 3rem;
+    }
+
+  
+
+    .bk-btn {
+        background-color: var(--green);
+        padding: 1rem;
+        cursor: pointer;
+        font-size: 1.2rem;
+        color: black;
+    }
+
+    .bk-btn:hover {background-color: black; color: var(--green);}
+    .btn:hover {background-color: var(--secondary); color: var(--primary)}
+    .services-list li {list-style-type: circle !important;}
+
+    /*--------------------------------------------------------------
+    >>> CONTACT
+    --------------------------------------------------------------*/
+    .contact-form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact-info p{max-width: 80%;}
+    /*--------------------------------------------------------------
+    >>> CONTACT - END
+    --------------------------------------------------------------*/
+    /*--------------------------------------------------------------
+    >>> BODY - END
+    --------------------------------------------------------------*/
+
+    /*--------------------------------------------------------------
+    >>> FAQS
+    --------------------------------------------------------------*/
+    .faqs-section {
+        max-width: 90%;
+        margin: 0 auto;
+        padding: 4rem 2rem;
+    } 
+
+    .accordion {
+      background-color: var(--primary);
+      color: var(--secondary);
+      cursor: pointer;
+      padding: 18px;
+      width: 100%;
+      text-align: left;
+      border: none;
+      outline: none;
+      transition: 0.4s;
+    
+    }
+
+    .faqs-item {
+        background-color: var(--primary);
+        padding: 1rem;
+        margin-top: 2rem;
+        cursor: pointer;
+        font-size: 1.2rem;
+    }
+    
+    .active, .accordion:hover {
+      background-color: var(--green);
+      color: black;
+    }
+
+    .active {border-radius: 7px 7px 0 0;}
+    
+    .panel {
+      padding: 1rem 20px;
+      background-color: white;
+      display: none;
+      overflow: hidden;
+      border-radius: 0 0 7px 7px;
+    } 
+
+    /*--------------------------------------------------------------
+    >>> FAQS - END
+    --------------------------------------------------------------*/
+}
+
+/*--------------------------------------------------------------
+>>> 1400
+----------------------------------------------------------------*/

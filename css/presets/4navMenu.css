@@ -17,17 +17,20 @@
 
 /* CHANGE LOGO SIZE */
 .header-logo {
-width: 60px;
+width: 80px;
 height: 60px;
 }
 
 /* SOCIAL LINKS */
-.header-social a:first-child{margin-right: 1.5rem;}
-.header-social a:last-child{margin-left: 1.5rem;}
-.plane {margin-right:1.5rem;}
+.header-social a:first-child{margin-right: 0.8rem;}
+.header-social a:last-child{margin-left: 0.8rem;}
+/* .plane {margin-right:0.5rem;} */
 
 /* EDIT THE LINKS */
-.nav-link:hover {color: #DFC164;}
+.nav-link {color: var(--primary);}
+.nav-link:hover {color: var(--green);}
+.header-social i {color: var(--primary);}
+.header-social i:hover {color: var(--green);}
 .navbar-links {
     display: flex;
     color: var(--primary);
