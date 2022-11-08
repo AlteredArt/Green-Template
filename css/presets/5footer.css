@@ -1,0 +1,39 @@
+/*--------------------------------------------------------------
+>>> FOOTER
+--------------------------------------------------------------*/
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    min-height: 120px;
+    align-items: center;
+    margin-bottom: 0;
+    background-color: var(--secondary);
+}
+
+.footer-social {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 4rem;
+}
+
+.footer-social-item i {color: var(--primary);}
+
+.sub-footer h4 {
+    color: var(--primary);
+    background-color: var(--secondary);
+    text-align: center;
+    padding: 1rem;
+}
+
+.footer-logo {
+    width:160px; 
+    height:130px;
+    margin: 3rem auto;
+}
+
+/*--------------------------------------------------------------
+>>> FOOTER END
+--------------------------------------------------------------*/
