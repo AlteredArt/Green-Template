@@ -1,14 +1,20 @@
 .hero-image {
-    background-color: var(--green);
+    background: radial-gradient(circle, rgba(255,255,255,0.010224158022584029) 0%, rgba(0,0,0,1) 69%);
 
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../assets/images/logobig.webp);
-    min-height: 600px;
+    /* background-image: radial-gradient(center, #FFFFFF 0%, #000000 59%, #b71111 100%), url(../../assets/images/hero.png); */
+    /* background-image: radial-gradient(center, #FFFFFF 0%, #000000 59%, #b71111 100%), url(../../assets/images/hero.png); */
+background-image:
+url('../../assets/images/hero.png');
+
+    min-height:600px;
     max-height: 600px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
 }
+
+
 
 .hero-text {
     text-align: center;
