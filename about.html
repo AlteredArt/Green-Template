@@ -11,58 +11,10 @@
   </head>
   <body>
 
-    <!-- HEADER -->
-    <div class="masthead" id='masthead'>
-      <header class="header" id="Header">
-        <div id="header-logo">
-          <a href="./index.html" id="top"><img src="./assets/images/logobig.webp" alt="logo" class='header-logo'></a>
-        </div>
-        <div class="header-social">
-          <a href="mailto:knightvisionco@gmail.com"><i class="fa-solid fa-paper-plane tooltip plane"><span class="tooltiptext">Mail</span></i></a>
-          <a href="https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2FKnightVisionInspection"><i class="fa-brands fa-linkedin tooltip"><span class="tooltiptext">Facebook</span></i></a>
-        </div>
-        <div class="header-switch">
-          <label class="theme-switch" for="checkbox">
-              <input type="checkbox" id="checkbox" />
-              <div class="slider round"></div>
-          </label>
-        </div>
-        <div id="toggle">
-          <i class="indicator"></i>
-        </div>
-          <nav class="header-navbar">
-            <ul class='navbar-links nav-menu'>
-              <li class='nav-item secondary'><a href="./services.html" class='nav-link'>Services</a></li>
-              <li class='nav-item secondary'><a href="./faqs.html" class='nav-link'>FAQs</a></li>
-              <li class='nav-item secondary'><a href="./about.html" class='nav-link'>About</a></li>
-              <li class='nav-item secondary'><a href="./diy.html" class='nav-link'>DIY</a></li>
-              <li class='nav-item secondary'><a href="./book" class='nav-link bk-btn'>Book Now</a></li>
-  
-                <div class="mobile-social-nav">
-                  <li class='mobile-social-item'><a href="mailto:knightvisionco@gmail.com"><i class="fa-solid fa-paper-plane  tooltip"><span class="tooltiptext">Mail</span></i></a></li>
-                  <li class='mobile-social-item'><a href="https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2FKnightVisionInspection"><i class="fa-brands fa-facebook tooltip"><span class="tooltiptext">Facebook</span></i></a></li>
-                </div>  
-            </ul>
-            <div class="hamburger">
-              <span class="bar"></span>
-              <span class="bar"></span>
-              <span class="bar"></span>
-            </div>
-          </nav>
-        </header>
-      </div> 
-      
-
-    <!-- HERO -->
-    <div class="hero">
-      <div class="hero-image">
-        <div class="hero-text">
-          <h1>FAQS</h1>
-          <p>All your inspection questions & answers.</p>
-          <button class="btn">Book Now</button>
-        </div>
-      </div> 
-    </div>
+      <!-- NAV -->
+      <app-nav></app-nav>
+      <!-- HERO -->
+      <app-hero></app-hero>
    
 
     <!-- FAQS -->
@@ -140,29 +92,15 @@
     </div>
 
     
-    <!-- FOOTER -->
-    <a onclick="topFunction()" id="backToTop" title="Go2top"><i class="fa fa-arrow-circle-up"></i></a>
-
-    <footer>
-        <div class='footer'>
-            <img src="./assets/images/logobig.webp" alt="logo" style="width:160px; height:130px;">
-      
-            <div class="footer-social">
-              <li class='footer-social-item'><a href="mailto:knightvisionco@gmail.com"><i class="fa-solid fa-paper-plane  tooltip"><span class="tooltiptext">Mail</span></i></a></li>
-              <li class='footer-social-item'><a href="https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2FKnightVisionInspection"><i class="fa-brands fa-linkedin tooltip"><span class="tooltiptext">Facebook</span></i></a></li>
-              <li class='footer-social-item'><a href=""><i class="fa fa-file fa-bounce bounce tooltip"> <span class="tooltiptext">Book Now</span></i></a></li>
-            </div>
-        </div>
-        
-        <div class="sub-footer"><h4>Knight Vision Inspection <span>&#169;</span> 2022</h4></div>
-    </footer>
+   <!-- FOOTER -->
+   <app-footer></app-footer>
 
   </body>
 
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script type="text/javascript" src="./js/backToTop.js"></script>
-  <script type="text/javascript" src="./js/themeSwitch.js"></script>
-  <script type="text/javascript" src="./js/navMenu.js"></script>
-  <script type="text/javascript" src="./js/accordion.js"></script>
+  <script type="text/javascript" src="../js/nav.js"></script>
+  <script type="text/javascript" src="../js/hero.js"></script>
+  <script type="text/javascript" src="../js/footer.js"></script>
+  <script src="./js/accordion.js"></script>
 </html>

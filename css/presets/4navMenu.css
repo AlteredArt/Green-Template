@@ -22,8 +22,15 @@ height: 60px;
 }
 
 /* SOCIAL LINKS */
-.header-social a:first-child{margin-right: 0.8rem;}
-.header-social a:last-child{margin-left: 0.8rem;}
+.header-social {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    min-width: 20%;
+    max-width: 20%;
+}
+/* .header-social a:first-child{margin-right: 0.8rem;}
+.header-social a:last-child{margin-left: 0.8rem;} */
 /* .plane {margin-right:0.5rem;} */
 
 /* EDIT THE LINKS */
@@ -60,3 +67,14 @@ height: 60px;
 /*--------------------------------------------------------------
 >>> NAVIGATION MENU - END
 --------------------------------------------------------------*/
+
+.bk-btn {
+    background-color: var(--green);
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: black;
+    border: none;
+}
+
+.bk-btn:hover {background-color: black; color: var(--green);}

@@ -8,156 +8,136 @@
     >>> LAYOUTS SAVE 
     --------------------------------------------------------------*/
     .page-body {background-color: var(--secondary);}
-    .container {min-width: 100%;}
+
  
-    .btn {
+
+    /* <div class="example-container(color) container">
+        <div class="flex">
+            <div class="col single-col">
+                text
+            </div>
+        </div>
+       </div> */
+    /* TOP PARENT */
+    .container {
+        min-width: 100%;
+        max-width: 100%;
+        padding: 30px 30px;
+    }
+    /* MID PARENT */
+    .flex {
+        display: flex;
+        margin: 0 -15px;
+        flex-wrap: wrap;
+    }
+    /* CHILD ROOT */
+    .col {
+        padding: 20px;
+        margin: 30px 15px 30px;
+        box-sizing: border-box;
+        /* background-color: purple; */
+    }
+    /* CHILDREN */
+    /* SINGLE COLUMN */
+    .single-col {width: calc(100% -30px);}
+    /* TWO COLUMN */
+    .two-half-col {width: calc(50% - 30px);}
+    /* THREE COLUMN */
+    .three-col {width:calc(33.33% -30px);}
+    /* QUARTER COLUMN */
+    .quarter-col {
+        flex: 20%;
+        padding: 0px;
+    }
+    /* CENTER */
+    .center {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .btn { 
         background-color: var(--green);
-        padding: 1rem;
+        padding: 0.8rem 1.4rem;
         cursor: pointer;
         font-size: 1.2rem;
-    } 
-
-    .left-half-panel, .right-half-panel {min-width: 50%;}
-    .right-half-panel {padding-top: 5rem;}
-
-    .twocol {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        max-width: 70%;
-        padding: 2rem 0;
-        margin: 0 auto;
-    
+        color: black !important;
+        border: none;
     }
+    .btn:hover {background-color: var(--secondary); color: var(--primary)}
+
+
     /*--------------------------------------------------------------
     >>> LAYOUTS SAVE END
     --------------------------------------------------------------*/
 
 
-
-
-
     /*--------------------------------------------------------------
-    >>> BODY
+    >>> HOME
     --------------------------------------------------------------*/
-
-    .nachi {
-        margin-top:-6rem;
-        max-width: 100%;
-    }
-
+    .banner-content p {color: var(--primary); text-align: center;}
+    .intro-info-container {background-color: var(--green);}
+    .services-list-title { margin-bottom: 2rem;}
+    .services-list li {list-style-type: disc !important;}
 
     .services-list {
-        list-style-type: none;
         margin: 0 0 2rem 0;
         line-height: 2rem;
     }
 
-
-
-    .image-gallery {
-        display: flex;
-      }
-
-      .image-gallery {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 10px;
-      }
-      
-      .image-gallery > li {
-        flex-basis: 350px; /* width: 350px; */
-      }
-      
-      .image-gallery li img {
-        object-fit: cover;
-        max-width: 100%;
-        height: auto;
-        vertical-align: middle;
-        border-radius: 5px;
-      }
-
-      .image-gallery::after {
-        content: "";
-        flex-basis: 350px;
-      }
-
-      .image-gallery > li {
-        /* ... */
-        position: relative;
-        cursor: pointer;
-      }
-      .overlay {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        background: rgba(57, 57, 57, 0.502);
-        top: 0;
-        left: 0;
-        transform: scale(0);
-        transition: all 0.2s 0.1s ease-in-out;
-        color: #fff;
-        border-radius: 5px;
-        /* center overlay text */
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-      
-      /* hover */
-      .image-gallery li:hover .overlay {
-        transform: scale(1);
-      }
-
-
-
-
-
-
-
-
-    .lineout-container {
-        background-color: var(--green);
-    }
-
-  
-    .certifications-container {
-        min-height: 150px;
-        background-color: var(--green);
-        text-align: center;
-        padding-top: 3rem;
-    }
-
-  
-
-    .bk-btn {
-        background-color: var(--green);
+    .into-btn {
+        background-color: black;
+        color: white;
         padding: 1rem;
         cursor: pointer;
         font-size: 1.2rem;
-        color: black;
+        border: none;
     }
 
-    .bk-btn:hover {background-color: black; color: var(--green);}
-    .btn:hover {background-color: var(--secondary); color: var(--primary)}
-    .services-list li {list-style-type: circle !important;}
+    .intro-btn:hover {color: var(--green);}
 
-    /*--------------------------------------------------------------
-    >>> CONTACT
-    --------------------------------------------------------------*/
-    .contact-form {
-        display: flex;
-        flex-direction: column;
+    .nachi-intro-image {max-width: 60%;}
+   
+
+    .form-title {margin-bottom: 1rem;;}
+    .contact-container * {color:var(--primary);}
+    .contact-message {text-align: center;}
+    .contact-message h2 {margin-bottom: 1rem;}
+    .contact-info i {margin:0rem 1rem 0 0rem;}
+    .contact-info {margin-top: 2rem;}
+    .contact-info * {color: var(--green);}
+
+    .contact-form input, textarea {
+        width: 400px;
+        border: 0;
+        margin: 10px 0;
+        padding: 20px;
+        outline: none;
+        color: var(--secondary);
     }
 
-    .contact-info p{max-width: 80%;}
+
+
+    .hours h3{
+        margin: 5rem 0 1rem;
+        text-decoration: underline;
+    }
+    .hours p {text-align: center;}
+
+
+    .certifications-container {background-color: var(--green);}
+    .cert-title {
+        text-align: center;
+        padding: 2rem;
+    }
+  
+
     /*--------------------------------------------------------------
-    >>> CONTACT - END
+    >>> HOME END
     --------------------------------------------------------------*/
-    /*--------------------------------------------------------------
-    >>> BODY - END
-    --------------------------------------------------------------*/
+
+
 
     /*--------------------------------------------------------------
     >>> FAQS
@@ -165,7 +145,7 @@
     .faqs-section {
         max-width: 90%;
         margin: 0 auto;
-        padding: 4rem 2rem;
+        padding: 10rem 0 6rem 0;
     } 
 
     .accordion {
@@ -202,7 +182,10 @@
       display: none;
       overflow: hidden;
       border-radius: 0 0 7px 7px;
+
     } 
+
+    .panel p {max-width: 85%;}
 
     /*--------------------------------------------------------------
     >>> FAQS - END
