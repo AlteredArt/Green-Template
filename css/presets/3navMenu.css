@@ -77,4 +77,8 @@ height: 60px;
     border: none;
 }
 
-.bk-btn:hover {background-color: black; color: var(--green);}
+.bk-btn:hover {
+    background-color: black; 
+    color: var(--green); 
+    border: 2px solid var(--green);
+}

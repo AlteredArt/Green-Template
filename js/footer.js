@@ -11,8 +11,8 @@ class Footer extends HTMLElement{
               <li class='footer-social-item'><a href="mailto:knightvisionco@gmail.com"><i class="fa-solid fa-paper-plane  tooltip"><span class="tooltiptext">Mail</span></i></a></li>
               <li class='footer-social-item'><a href="tel:303-718-3046"><i class="fa-solid fa-phone  tooltip"><span class="tooltiptext">Phone</span></i></a></li>
               <li class='footer-social-item'><a href="https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2FKnightVisionInspection"><i class="fa-brands fa-facebook tooltip"><span class="tooltiptext">Facebook</span></i></a></li>
-              <li class='footer-social-item'><a href="https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2FKnightVisionInspection"><i class="fa-brands fa-facebook-messenger tooltip"><span class="tooltiptext">FBMessenger</span></i></a></li>
-              <li class='footer-social-item'><a href=""><i class="fa-solid fa-calendar-check tooltip"> <span class="tooltiptext">Book Now</span></i></a></li>
+              <li class='footer-social-item'><a href="https://www.messenger.com/login.php?next=https%3A%2F%2Fwww.messenger.com%2Ft%2F100992561910609%2F%3Fmessaging_source%3Dsource%253Apages%253Amessage_shortlink%26source_id%3D1441792%26recurring_notification%3D0"><i class="fa-brands fa-facebook-messenger tooltip"><span class="tooltiptext">FBMessenger</span></i></a></li>
+              <li class='footer-social-item'><a href="https://square.site/book/L98NPR7TF8NX2/knight-vision-inspection"><i class="fa-solid fa-calendar-check tooltip"> <span class="tooltiptext">Book Now</span></i></a></li>
             </div>
            
           </div>
