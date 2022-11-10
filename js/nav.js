@@ -13,8 +13,8 @@ class Nav extends HTMLElement{
             <a href="mailto:knightvisionco@gmail.com"><i class="fa-solid fa-paper-plane  tooltip"><span class="tooltiptext">Mail</span></i></a>
             <a href="tel:303-718-3046"><i class="fa-solid fa-phone  tooltip"><span class="tooltiptext">Phone</span></i></a>
             <a href="https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2FKnightVisionInspection"><i class="fa-brands fa-facebook tooltip"><span class="tooltiptext">Facebook</span></i></a>
-            <a href="https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2FKnightVisionInspection"><i class="fa-brands fa-facebook-messenger tooltip"><span class="tooltiptext">FBMessenger</span></i></a>
-            <a href=""><i class="fa-solid fa-calendar-check tooltip"> <span class="tooltiptext">Book Now</span></i></a>
+            <a href="https://www.messenger.com/login.php?next=https%3A%2F%2Fwww.messenger.com%2Ft%2F100992561910609%2F%3Fmessaging_source%3Dsource%253Apages%253Amessage_shortlink%26source_id%3D1441792%26recurring_notification%3D0"><i class="fa-brands fa-facebook-messenger tooltip"><span class="tooltiptext">FBMessenger</span></i></a>
+            <a href="https://square.site/book/L98NPR7TF8NX2/knight-vision-inspection"><i class="fa-solid fa-calendar-check tooltip"> <span class="tooltiptext">Book Now</span></i></a>
           </div>
           <div class="header-switch">
             <label class="theme-switch" for="checkbox">
@@ -27,11 +27,10 @@ class Nav extends HTMLElement{
           </div>
             <nav class="header-navbar">
               <ul class='navbar-links nav-menu'>
-                <li class='nav-item secondary'><a href="./services.html" class='nav-link'>Services</a></li>
-                <li class='nav-item secondary'><a href="./faqs.html" class='nav-link'>FAQs</a></li>
-                <li class='nav-item secondary'><a href="./about.html" class='nav-link'>About</a></li>
-                <li class='nav-item secondary'><a href="./diy.html" class='nav-link'>DIY</a></li>
-                <li class='nav-item secondary'><a href="./book" class='nav-link bk-btn'>Book Now</a></li>
+                <li class='nav-item secondary'><a href="./services.html" class='nav-link'>SERVICES</a></li>
+                <li class='nav-item secondary'><a href="./about.html" class='nav-link'>ABOUT</a></li>
+                <li class='nav-item secondary'><a href="./faqs.html" class='nav-link'>FAQs / DIY</a></li>
+                <li class='nav-item secondary'><a href="https://square.site/book/L98NPR7TF8NX2/knight-vision-inspection" class='nav-link bk-btn'>Book Now</a></li>
     
                   <div class="mobile-social-nav">
                     <li class='mobile-social-item'><a href="mailto:knightvisionco@gmail.com"><i class="fa-solid fa-paper-plane  tooltip"><span class="tooltiptext">Mail</span></i></a></li>

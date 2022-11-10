@@ -10,7 +10,7 @@
     align-items: center;
     padding-top: 2rem;
     border-top: 3px solid var(--green);
-    background-color: var(--secondary);
+    background-color: black;
 }
 
 .footer-social {
@@ -24,7 +24,7 @@
 
 }
 
-.footer-social-item i {color: var(--primary);}
+.footer-social-item i {color: white;}
 
 .sub-footer h4 {
     color: var(--primary);

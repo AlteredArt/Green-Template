@@ -4,22 +4,21 @@
 
 /* PRESETS */
 @import "./presets/1reset.css";
-@import "./presets/2text.css";
-@import "./presets/3color.css";
-@import "./presets/4navMenu.css";
-@import "./presets/5footer.css";
-@import "./presets/6themeSwitch.css";
-@import "./presets/7backToTop.css";
-@import "./presets/8hero.css";
+@import "./presets/2color.css";
+@import "./presets/3navMenu.css";
+@import "./presets/4footer.css";
+@import "./presets/5themeSwitch.css";
+@import "./presets/6backToTop.css";
+@import "./presets/7hero.css";
 
 
 /* MEDIA QUERY */
-@import "./mediaQuery/min1400.css";
-@import "./mediaQuery/1400.css"; 
-@import "./mediaQuery/1200.css";
-@import "./mediaQuery/992.css";
-@import "./mediaQuery/768.css";
-@import "./mediaQuery/576.css"; 
+@import "./mediaquery/576.css"; 
+@import "./mediaquery/768.css";
+@import "./mediaquery/992.css";
+@import "./mediaquery/1200.css";
+@import "./mediaquery/1400.css"; 
+@import "./mediaquery/min1400.css";
 
 /*--------------------------------------------------------------
 >>> INDEX - END
