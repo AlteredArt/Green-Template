@@ -313,10 +313,17 @@
         padding: 3rem 0;
     }
 
+    .panel-flex {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
     .limitations-list {margin: 0 0 0 4rem;}
     .diy-pic {margin-top:3rem;} 
 
     .diy-image {
+        border: 2px solid black;
         width: 400px;
         max-width: 48%;
         min-width: 48%;
@@ -325,6 +332,11 @@
         min-height: 400px;
     } 
 
+
+    .diy-title {
+        padding: 1rem;
+        text-decoration: underline;
+    }
     /*--------------------------------------------------------------
     >>> DIY - END
     --------------------------------------------------------------*/
@@ -341,6 +353,16 @@
     .service-info-2 * {color: var(--light);}
     .service-container-1 {background-color: var(--light);}
     .service-container-2 {background-color: var(--dark);}
+
+    .nachi-btn {
+        background-color: black;
+        color: white !important;
+        padding: 0.8rem 1.4rem;
+        cursor: pointer;
+        font-size: 1.2rem;
+        border: none;
+        /* margin-top: 23rem; */
+    }
 
     .services-image img{
         width: 400px;
