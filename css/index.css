@@ -2,23 +2,11 @@
 >>> INDEX
 --------------------------------------------------------------*/
 
-/* PRESETS */
 @import "./presets/1reset.css";
-@import "./presets/2color.css";
-@import "./presets/3navMenu.css";
+@import "./presets/2style.css";
+@import "./presets/3header.css";
 @import "./presets/4footer.css";
-@import "./presets/5themeSwitch.css";
-@import "./presets/6backToTop.css";
-@import "./presets/7hero.css";
-
-
-/* MEDIA QUERY */
-@import "./mediaquery/576.css"; 
-@import "./mediaquery/768.css";
-@import "./mediaquery/992.css";
-@import "./mediaquery/1200.css";
-@import "./mediaquery/1400.css"; 
-@import "./mediaquery/min1400.css";
+@import "./presets/5main.css";
 
 /*--------------------------------------------------------------
 >>> INDEX - END
