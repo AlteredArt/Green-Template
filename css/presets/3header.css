@@ -1,0 +1,331 @@
+/*--------------------------------------------------------------
+>>> NAVIGATION MENU
+--------------------------------------------------------------*/
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--dark);
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    padding: 1rem 2rem 1rem 1rem;
+    max-height: 95px;
+    border-bottom: 5px solid var(--other1);
+}
+
+/* CHANGE LOGO SIZE */
+.header-logo {
+width: 80px;
+height: 60px;
+}
+
+
+/* SOCIAL LINKS */
+.header-social {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    min-width: 20%;
+    max-width: 20%;
+}
+/* .header-social a:first-child{margin-right: 0.8rem;}
+.header-social a:last-child{margin-left: 0.8rem;} */
+/* .plane {margin-right:0.5rem;} */
+
+/* EDIT THE LINKS */
+
+.nav-link {color: var(--light);
+    list-style-type: none !important;
+
+}
+.nav-link:hover {color: var(--other1);}
+.header-social i {color: var(--light);}
+.header-social i:hover {color: var(--other1);}
+.navbar-links {
+    display: flex;
+    color: var(--light);
+    justify-content: space-between;
+    align-items: center;
+    width: 57vw;
+}
+
+/* MOBILE MENU */
+.hamburger {display: none;}
+.mobile-social-nav {display:none;}
+
+/* TOOLTIP */
+.tooltip:hover .tooltiptext {visibility: visible;}
+.tooltip .tooltiptext {
+    visibility: hidden;
+    /* font-size: 1rem; */
+    background-color: var(--light);
+    border: 2px solid var(--dark);
+    color: var(--dark);
+    padding: 0.50rem 1rem;
+    margin-top: 2rem;
+    position: absolute;
+    z-index: 280 !important;
+}
+
+/*--------------------------------------------------------------
+>>> NAVIGATION MENU - END
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+>>> THEME SWITCH
+--------------------------------------------------------------*/
+
+.theme-switch {
+    display: inline-block;
+    height: 34px;
+    position: relative;
+    /* top: 60px; */
+    /* left: 20px; */
+    margin: 0 auto;
+    width: 60px;
+}
+
+.slider {
+    background-color: var(--light);
+    bottom: 0;
+    cursor: pointer;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: .4s;
+}
+
+.slider:before {
+    background-color: var(--other1);
+    bottom: 4px;
+    content: "";
+    height: 26px;
+    left: 4px;
+    position: absolute;
+    transition: .4s;
+    width: 26px;
+}
+
+input:checked + .slider {background-color: var(--light);}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+    background-color: var(--other1);
+}
+
+.slider.round {border-radius: 34px;}
+.slider.round:before {border-radius: 50%;}
+
+/*--------------------------------------------------------------
+>>> THEME SWITCH - END
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+>>> HERO
+--------------------------------------------------------------*/
+.hero-image {
+    background: radial-gradient(circle, rgba(255,255,255,0.010224158022584029) 0%, rgba(0,0,0,1) 69%);
+    background-image: url('../../assets/images/hero.png');
+    min-height:600px;
+    max-height: 600px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    border-bottom: 5px solid var(--other1);
+}
+
+.hero-text {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-bottom: 13rem;
+}
+
+.hero-text h1 {padding-top: 8rem; color: white;}
+/* .hero-text button {margin-top:3rem;} */
+.hero-text h2 {padding:2rem 0 8rem 0; color: white;}
+/*--------------------------------------------------------------
+>>> HERO - END
+--------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+/*--------------------------------------------------------------
+>>> 1400
+----------------------------------------------------------------*/
+@media only screen and (max-width: 1400px) {
+/*--------------------------------------------------------------
+>>> HERO
+--------------------------------------------------------------*/
+.hero {padding-top: 4rem;}
+
+.hero_image {
+    width:100% !important;
+    min-width:100% !important;
+    padding-top: 1rem;
+    height: 100vh;
+}
+/*--------------------------------------------------------------
+>>> HERO - END
+--------------------------------------------------------------*/
+}
+/*--------------------------------------------------------------
+>>> 1400
+----------------------------------------------------------------*/
+
+
+
+
+
+/*--------------------------------------------------------------
+>>> 1200
+----------------------------------------------------------------*/
+@media only screen and (max-width: 1200px) {}
+/*--------------------------------------------------------------
+>>> 1200
+----------------------------------------------------------------*/
+
+
+
+
+
+/*--------------------------------------------------------------
+>>> 992
+----------------------------------------------------------------*/
+@media only screen and (max-width: 992px) {
+/*--------------------------------------------------------------
+>>> NAVIGATION
+--------------------------------------------------------------*/
+.header {
+    padding: 1rem 1rem 1rem 0rem;
+    justify-content: space-around;
+}
+.nav_menu {
+    position: fixed;
+    left: -100%;
+    top: 5rem;
+    flex-direction: column;
+    background-color: var(--dark);
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow:0 10px 27px rgba(0, 0, 0, 0.05);
+    border-bottom: 3px solid var(--other1);
+}
+.bar {
+    display: block;
+    width: 35px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: var(--other1);
+}
+.header_switch {margin-left: 7rem;}
+.nav_menu.active {left: 0;}
+.nav_item :hover {color: #DFC164;}
+.nav_item {margin: 2rem 0;}
+.nav_link :hover {color: #DFC164; }
+.hamburger {display: block; cursor: pointer; }
+.hamburger.active .bar:nth-child(1) {transform: translateY(8px) rotate(45deg);}
+.hamburger.active .bar:nth-child(3) {transform: translateY(-8px) rotate(-45deg);} 
+
+/*--------------------------------------------------------------
+>>> NAVIGATION -END
+--------------------------------------------------------------*/
+}
+/*--------------------------------------------------------------
+>>> 992
+----------------------------------------------------------------*/
+
+
+
+
+
+
+
+/*--------------------------------------------------------------
+>>> 768
+----------------------------------------------------------------*/
+@media only screen and (max-width: 768px) {
+/*--------------------------------------------------------------
+>>> NAVIGATION
+--------------------------------------------------------------*/
+.header_switch {margin-left: 4rem;}
+.header_social {margin-left: 3rem;}
+/*--------------------------------------------------------------
+>>> NAVIGATION - END
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+>>> HERO
+--------------------------------------------------------------*/
+.hero_image {height: 60vh;}
+/*--------------------------------------------------------------
+>>> HERO - END
+--------------------------------------------------------------*/  
+}
+/*--------------------------------------------------------------
+>>> 768
+----------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+/*--------------------------------------------------------------
+>>> 576
+----------------------------------------------------------------*/
+@media only screen and (max-width: 576px) {
+/*--------------------------------------------------------------
+>>> NAVIGATION
+--------------------------------------------------------------*/
+.header_social {display: none !important;}
+.header_switch {margin-left: 3rem !important;}
+.nav_item { margin: 1.5rem 0  1.5rem 0;}
+.tooltiptext {display: none;}
+.nav_item {margin: 1rem 0;}
+.special_container {
+    display: flex;
+    justify-content: space-around !important;
+    width: 100%;
+}
+.nav_item_secondary :hover {
+    background-color: var(--light); 
+    padding: 1rem 7rem 1rem 7rem;
+}
+.mobile_social_nav {
+    display:flex;
+    align-content: space-around;
+    padding: 2rem;
+}
+.mobile_social_nav a:first-child{margin-right: 1.5rem;}
+.mobile_social_nav a:last-child{margin-left: 1.5rem;}
+/*--------------------------------------------------------------
+>>> NAVIGATION - END
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+>>> HERO
+--------------------------------------------------------------*/
+.hero_image {height: 40vh !important;}
+.hero {padding-top: 5rem !important;}
+/*--------------------------------------------------------------
+>>> HERO - END
+--------------------------------------------------------------*/
+
+}
+/*--------------------------------------------------------------
+>>> 576
+----------------------------------------------------------------*/
