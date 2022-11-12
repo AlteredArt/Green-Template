@@ -15,7 +15,8 @@ p {font-size: calc(1.075rem + 0.3vw) !important;}
 /* TEXT STYLE( BOLD / UNDERLINE / FONT / ETC.) */
     /* h3 = title / h4 = subtitle */
 a {text-decoration: none !important;}
-li {list-style-type: disc !important; font-size: 1.6rem;}
+li {list-style-type: none !important;}
+.page-body li {list-style-type: disc !important; font-size: 1.6rem;}
 ul {line-height: 2rem;}
 /*--------------------------------------------------------------
 >>> TEXT - END

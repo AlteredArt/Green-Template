@@ -29,16 +29,10 @@ height: 60px;
     min-width: 20%;
     max-width: 20%;
 }
-/* .header-social a:first-child{margin-right: 0.8rem;}
-.header-social a:last-child{margin-left: 0.8rem;} */
-/* .plane {margin-right:0.5rem;} */
+
 
 /* EDIT THE LINKS */
-
-.nav-link {color: var(--light);
-    list-style-type: none !important;
-
-}
+.nav-link {color: var(--light);}
 .nav-link:hover {color: var(--other1);}
 .header-social i {color: var(--light);}
 .header-social i:hover {color: var(--other1);}
@@ -68,6 +62,21 @@ height: 60px;
     z-index: 280 !important;
 }
 
+/* DROPDOWN */
+ul li ul.dropdown li {display: block;}
+ul li a {color: var(--light);}
+ul li a:hover {color: var(--other1);}
+ul li:hover ul.dropdown {display: block;}
+ul li ul.dropdown {
+    padding: 1rem;
+    margin: 0rem 0 0 -3rem;
+    width: auto;
+    background-color: var(--dark);
+    z-index: 999;
+    position: absolute;
+    display: none;
+    border: 2px solid var(--other1);
+}
 /*--------------------------------------------------------------
 >>> NAVIGATION MENU - END
 --------------------------------------------------------------*/
@@ -109,14 +118,9 @@ height: 60px;
 }
 
 input:checked + .slider {background-color: var(--light);}
-
-input:checked + .slider:before {
-    transform: translateX(26px);
-    background-color: var(--other1);
-}
-
 .slider.round {border-radius: 34px;}
 .slider.round:before {border-radius: 50%;}
+input:checked + .slider:before {transform: translateX(26px); background-color: var(--other1);}
 
 /*--------------------------------------------------------------
 >>> THEME SWITCH - END
@@ -125,6 +129,8 @@ input:checked + .slider:before {
 /*--------------------------------------------------------------
 >>> HERO
 --------------------------------------------------------------*/
+.hero-text h1 {padding-top: 8rem; color: white;}
+.hero-text h2 {padding:2rem 0 8rem 0; color: white;}
 .hero-image {
     background: radial-gradient(circle, rgba(255,255,255,0.010224158022584029) 0%, rgba(0,0,0,1) 69%);
     background-image: url('../../assets/images/hero.png');
@@ -144,10 +150,6 @@ input:checked + .slider:before {
     transform: translate(-50%, -50%);
     padding-bottom: 13rem;
 }
-
-.hero-text h1 {padding-top: 8rem; color: white;}
-/* .hero-text button {margin-top:3rem;} */
-.hero-text h2 {padding:2rem 0 8rem 0; color: white;}
 /*--------------------------------------------------------------
 >>> HERO - END
 --------------------------------------------------------------*/
@@ -168,12 +170,12 @@ input:checked + .slider:before {
 --------------------------------------------------------------*/
 .hero {padding-top: 4rem;}
 
-.hero_image {
+.hero-image {
     width:100% !important;
     min-width:100% !important;
     padding-top: 1rem;
     height: 100vh;
-}
+} 
 /*--------------------------------------------------------------
 >>> HERO - END
 --------------------------------------------------------------*/
@@ -209,7 +211,7 @@ input:checked + .slider:before {
     padding: 1rem 1rem 1rem 0rem;
     justify-content: space-around;
 }
-.nav_menu {
+.nav-menu {
     position: fixed;
     left: -100%;
     top: 5rem;
@@ -220,7 +222,9 @@ input:checked + .slider:before {
     transition: 0.3s;
     box-shadow:0 10px 27px rgba(0, 0, 0, 0.05);
     border-bottom: 3px solid var(--other1);
+
 }
+
 .bar {
     display: block;
     width: 35px;
@@ -228,16 +232,14 @@ input:checked + .slider:before {
     margin: 5px auto;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
-    background-color: var(--other1);
+    background-color: var(--light);
 }
-.header_switch {margin-left: 7rem;}
-.nav_menu.active {left: 0;}
-.nav_item :hover {color: #DFC164;}
-.nav_item {margin: 2rem 0;}
-.nav_link :hover {color: #DFC164; }
+.header-switch {margin-left: 7rem;}
+.nav-menu.active {left: 0;}
+.nav-item {margin: 2rem 0;}
 .hamburger {display: block; cursor: pointer; }
 .hamburger.active .bar:nth-child(1) {transform: translateY(8px) rotate(45deg);}
-.hamburger.active .bar:nth-child(3) {transform: translateY(-8px) rotate(-45deg);} 
+.hamburger.active .bar:nth-child(3) {transform: translateY(-8px) rotate(-45deg);}  
 
 /*--------------------------------------------------------------
 >>> NAVIGATION -END
@@ -250,9 +252,6 @@ input:checked + .slider:before {
 
 
 
-
-
-
 /*--------------------------------------------------------------
 >>> 768
 ----------------------------------------------------------------*/
@@ -260,15 +259,15 @@ input:checked + .slider:before {
 /*--------------------------------------------------------------
 >>> NAVIGATION
 --------------------------------------------------------------*/
-.header_switch {margin-left: 4rem;}
-.header_social {margin-left: 3rem;}
+.header-switch {margin-left: 4rem;}
+.header-social {margin-left: 3rem;} 
 /*--------------------------------------------------------------
 >>> NAVIGATION - END
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
 >>> HERO
 --------------------------------------------------------------*/
-.hero_image {height: 60vh;}
+.hero-image {height: 60vh;}
 /*--------------------------------------------------------------
 >>> HERO - END
 --------------------------------------------------------------*/  
@@ -292,34 +291,34 @@ input:checked + .slider:before {
 /*--------------------------------------------------------------
 >>> NAVIGATION
 --------------------------------------------------------------*/
-.header_social {display: none !important;}
-.header_switch {margin-left: 3rem !important;}
-.nav_item { margin: 1.5rem 0  1.5rem 0;}
+.header-social {display: none !important;}
+.header-switch {margin-left: 3rem !important;}
+.nav-item { margin: 1.5rem 0  1.5rem 0;}
 .tooltiptext {display: none;}
-.nav_item {margin: 1rem 0;}
-.special_container {
+.nav-item {margin: 1rem 0;}
+.special-container {
     display: flex;
     justify-content: space-around !important;
     width: 100%;
 }
-.nav_item_secondary :hover {
+.nav-item .secondary :hover {
     background-color: var(--light); 
     padding: 1rem 7rem 1rem 7rem;
 }
-.mobile_social_nav {
+.mobile-social-nav {
     display:flex;
     align-content: space-around;
     padding: 2rem;
 }
-.mobile_social_nav a:first-child{margin-right: 1.5rem;}
-.mobile_social_nav a:last-child{margin-left: 1.5rem;}
+.mobile-social-nav a:first-child{margin-right: 1.5rem;}
+.mobile-social-nav a:last-child{margin-left: 1.5rem;}
 /*--------------------------------------------------------------
 >>> NAVIGATION - END
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
 >>> HERO
 --------------------------------------------------------------*/
-.hero_image {height: 40vh !important;}
+.hero-image {height: 40vh !important;}
 .hero {padding-top: 5rem !important;}
 /*--------------------------------------------------------------
 >>> HERO - END
