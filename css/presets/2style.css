@@ -2,7 +2,7 @@
 >>> TEXT
 --------------------------------------------------------------*/
 
-/* TEXT SIZE */
+/* SIZE */
 h1 {font-size: calc(1.375rem + 1.5vw) !important;}
 h2 {font-size: calc(1.225rem + 0.9vw) !important;}
 h3 {font-size: calc(1.13rem + 0.6vw) !important;} 
@@ -11,25 +11,119 @@ h5 {font-size: calc(1rem + 0.3vw) !important;}
 h6 {font-size: calc(0.8rem + 0.3vw) !important;} 
 a {font-size: calc(1.075rem + 0.3vw) !important;} 
 p {font-size: calc(1.075rem + 0.3vw) !important;} 
+li {font-size: calc(1.075rem + 0.3vw) !important;} 
 
-/* TEXT STYLE( BOLD / UNDERLINE / FONT / ETC.) */
-    /* h3 = title / h4 = subtitle */
+
+/* STYLE */
+.title {margin: 3rem 0 2rem 0; text-decoration: underline;} /* h3 = title */
+.subtitle {text-decoration: underline;} /* h4 = subtitle */
+.tac {text-align: center;}
 a {text-decoration: none !important;}
 li {list-style-type: none !important;}
-.page-body li {list-style-type: disc !important; font-size: 1.6rem;}
-ul {line-height: 2rem;}
+
+/* COLOR */
+h1, h2, h3, h4, h5, h6 {color: var(--light);}
+p, label {color: var(--light);}
+li {color: var(--light);}
+
 /*--------------------------------------------------------------
 >>> TEXT - END
 --------------------------------------------------------------*/
 
 /*--------------------------------------------------------------
->>> COLOR
+>>> DEFAULT COLORS
+--------------------------------------------------------------*/
+/* NAVIGATION */
+.nav-item .secondary :hover {background-color: var(--light); }
+.nav-menu {background-color: var(--dark); box-shadow:0 10px 27px rgba(0, 0, 0, 0.05);}
+.bar {background-color: var(--light);}
+/* FOOTER */
+#footer {border-top: 3px solid var(--other1); background-color: black;}
+.sub-footer {background-color: var(--dark); color: var(--light);} 
+#backToTop {color: var(--other1); background-color: var(--light);}
+/* DEFAULT */
+hr {background-color: black; color: black;}
+.page-body {background-color: var(--dark);}
+footer i {color: white !important;}
+.nachi-btn {background-color: black; color: white !important;}
+/* BUTTONS */
+/* BUTTON 1 */
+.btn { background-color: var(--light); color: black !important;}
+.btn:hover {background-color: var(--dark); color: var(--other1); border: 2px solid var(---other1);}
+/* BUTTON 2 */
+.intro-btn {background-color: black; color: white;}
+.intro-btn:hover {border: 2px solid white; color: white !important; background-color: black;}
+/* BUTTON 3 */
+.bk-btn {background-color: var(--other1); color: black !important; border: 2px solid black;}
+.bk-btn:hover {background-color: black; color: white !important; border: 2px solid var(--other1);}
+/* BUTTONS END */
+/*--------------------------------------------------------------
+>>> DEFAULT COLORS - END
 --------------------------------------------------------------*/
 
-h1, h2, h3, h4, h5, h6 {color: var(--light);}
-p, label {color: var(--light);}
-li {color: var(--light);}
-footer i {color: white !important;}
+/*--------------------------------------------------------------
+>>> OTHER COLOR
+--------------------------------------------------------------*/
+/* HOME PAGE */
+/* HERO */
+.hero-text h1 {padding-top: 8rem; color: white;}
+.hero-text h2 {padding:2rem 0 8rem 0; color: white;}
+.hero-image {background: radial-gradient(circle, rgba(255,255,255,0.010224158022584029) 0%, rgba(0,0,0,1) 69%); border-bottom: 5px solid var(--other1);}
+/* SLIDER */
+input:checked + .slider {background-color: var(--light);}
+.slider.round {border-radius: 34px;}
+.slider.round:before {border-radius: 50%;}
+input:checked + .slider:before {transform: translateX(26px); background-color: var(--other1);}
+.slider {background-color: var(--light);}
+.slider:before {background-color: var(--other1);}
+/* HEADER */
+.header {background-color: var(--dark); border-bottom: 5px solid var(--other1);}
+.nav-link {color: var(--light);}
+.nav-link:hover {color: var(--other1);}
+.header-social i {color: var(--light);}
+.header-social i:hover {color: var(--other1);}
+.navbar-links {color: var(--light);}
+/* DROPDOWN */
+ul li ul.dropdown li {display: block;}
+ul li a {color: var(--light);}
+ul li a:hover {color: var(--other1);}
+ul li:hover ul.dropdown {display: block;}
+ul li ul.dropdown {background-color: var(--dark); border: 2px solid var(--other1);}
+/* TOOLTIP */
+.tooltip .tooltiptext {background-color: var(--light); border: 2px solid var(--dark); color: var(--dark);}
+/* FORM */
+#fname,#lname,#email,#age,#size,#location,#phone,#message::placeholder {color: var(--light);}
+/* CERTIFICATIONS */
+#certifications {background-color: var(--other1);}
+#certifications h2 {color: black;}
+/* BANNER */
+#banner {background-color: var(--other1);}
+.banner-content * {color: black;}
+/* CONTACT */
+.contact-info a {color: var(--light);}
+.contact-form input, textarea {background-color: var(--dark); border: 2px solid var(--light); color: var(--light);}
+/* ACCORDIAN */
+.accordion {background-color: var(--light); color: var(--dark);}
+.active-acc, .accordion:hover {background-color: var(--other1); color: black;}
+.panel p {color: var(--dark);}
+.panel {background-color: var(--light);} 
+/* DIY PAGE*/
+#diy {background-color: var(--other1); color: black;}
+.symbol {color: var(--other1);}
+.diy-intro {background-color:#00ff00;}
+.diy-image {border: 2px solid black;} 
+/* SERVICES PAGE */
+#service {background-color: var(--other1);}
+#service * {color: black;}
+.service-info-1 * {color: var(--dark);}
+.service-info-2 * {color: var(--light);}
+.service-container-1 {background-color: var(--light);}
+.service-container-2 {background-color: var(--dark);}
+/* THOUGHT BUBBLE */
+p.bubble {background-color: var(--dark); border: 8px solid var(--light); color: var(--light) !important;}
+p.thought:before, p.thought:after {background-color: var(--dark); border: 8px solid var(--light);}
+
+
 
 /* ROOT THEME */
 :root {

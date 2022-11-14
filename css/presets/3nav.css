@@ -1,25 +1,23 @@
 /*--------------------------------------------------------------
 >>> NAVIGATION MENU
 --------------------------------------------------------------*/
+/* HEADER */
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--dark);
     position: fixed;
     z-index: 100;
     width: 100%;
     padding: 1rem 2rem 1rem 1rem;
     max-height: 95px;
-    border-bottom: 5px solid var(--other1);
 }
 
 /* CHANGE LOGO SIZE */
 .header-logo {
-width: 80px;
-height: 60px;
+    width: 80px;
+    height: 60px;
 }
-
 
 /* SOCIAL LINKS */
 .header-social {
@@ -30,15 +28,9 @@ height: 60px;
     max-width: 20%;
 }
 
-
 /* EDIT THE LINKS */
-.nav-link {color: var(--light);}
-.nav-link:hover {color: var(--other1);}
-.header-social i {color: var(--light);}
-.header-social i:hover {color: var(--other1);}
 .navbar-links {
     display: flex;
-    color: var(--light);
     justify-content: space-between;
     align-items: center;
     width: 57vw;
@@ -52,10 +44,6 @@ height: 60px;
 .tooltip:hover .tooltiptext {visibility: visible;}
 .tooltip .tooltiptext {
     visibility: hidden;
-    /* font-size: 1rem; */
-    background-color: var(--light);
-    border: 2px solid var(--dark);
-    color: var(--dark);
     padding: 0.50rem 1rem;
     margin-top: 2rem;
     position: absolute;
@@ -64,27 +52,17 @@ height: 60px;
 
 /* DROPDOWN */
 ul li ul.dropdown li {display: block;}
-ul li a {color: var(--light);}
-ul li a:hover {color: var(--other1);}
 ul li:hover ul.dropdown {display: block;}
 ul li ul.dropdown {
     padding: 1rem;
     margin: 0rem 0 0 -3rem;
     width: auto;
-    background-color: var(--dark);
     z-index: 999;
     position: absolute;
     display: none;
-    border: 2px solid var(--other1);
 }
-/*--------------------------------------------------------------
->>> NAVIGATION MENU - END
---------------------------------------------------------------*/
 
-/*--------------------------------------------------------------
->>> THEME SWITCH
---------------------------------------------------------------*/
-
+/* THEME SWITCH */
 .theme-switch {
     display: inline-block;
     height: 34px;
@@ -95,10 +73,12 @@ ul li ul.dropdown {
     width: 60px;
 }
 
+/* SLIDER */
+.slider.round {border-radius: 34px;}
+.slider.round:before {border-radius: 50%;}
+
 .slider {
-    background-color: var(--light);
     bottom: 0;
-    cursor: pointer;
     left: 0;
     position: absolute;
     right: 0;
@@ -107,7 +87,6 @@ ul li ul.dropdown {
 }
 
 .slider:before {
-    background-color: var(--other1);
     bottom: 4px;
     content: "";
     height: 26px;
@@ -117,22 +96,8 @@ ul li ul.dropdown {
     width: 26px;
 }
 
-input:checked + .slider {background-color: var(--light);}
-.slider.round {border-radius: 34px;}
-.slider.round:before {border-radius: 50%;}
-input:checked + .slider:before {transform: translateX(26px); background-color: var(--other1);}
-
-/*--------------------------------------------------------------
->>> THEME SWITCH - END
---------------------------------------------------------------*/
-
-/*--------------------------------------------------------------
->>> HERO
---------------------------------------------------------------*/
-.hero-text h1 {padding-top: 8rem; color: white;}
-.hero-text h2 {padding:2rem 0 8rem 0; color: white;}
+/* HERO */
 .hero-image {
-    background: radial-gradient(circle, rgba(255,255,255,0.010224158022584029) 0%, rgba(0,0,0,1) 69%);
     background-image: url('../../assets/images/hero.png');
     min-height:600px;
     max-height: 600px;
@@ -140,7 +105,6 @@ input:checked + .slider:before {transform: translateX(26px); background-color: v
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    border-bottom: 5px solid var(--other1);
 }
 
 .hero-text {
@@ -150,13 +114,10 @@ input:checked + .slider:before {transform: translateX(26px); background-color: v
     transform: translate(-50%, -50%);
     padding-bottom: 13rem;
 }
+
 /*--------------------------------------------------------------
->>> HERO - END
+>>> NAVIGATION MENU - END
 --------------------------------------------------------------*/
-
-
-
-
 
 
 
@@ -165,20 +126,13 @@ input:checked + .slider:before {transform: translateX(26px); background-color: v
 >>> 1400
 ----------------------------------------------------------------*/
 @media only screen and (max-width: 1400px) {
-/*--------------------------------------------------------------
->>> HERO
---------------------------------------------------------------*/
-.hero {padding-top: 4rem;}
-
-.hero-image {
-    width:100% !important;
-    min-width:100% !important;
-    padding-top: 1rem;
-    height: 100vh;
-} 
-/*--------------------------------------------------------------
->>> HERO - END
---------------------------------------------------------------*/
+    .hero {padding-top: 4rem;}
+    .hero-image {
+        width:100% !important;
+        min-width:100% !important;
+        padding-top: 1rem;
+        height: 100vh;
+    } 
 }
 /*--------------------------------------------------------------
 >>> 1400
@@ -204,126 +158,73 @@ input:checked + .slider:before {transform: translateX(26px); background-color: v
 >>> 992
 ----------------------------------------------------------------*/
 @media only screen and (max-width: 992px) {
-/*--------------------------------------------------------------
->>> NAVIGATION
---------------------------------------------------------------*/
-.header {
-    padding: 1rem 1rem 1rem 0rem;
-    justify-content: space-around;
-}
-.nav-menu {
-    position: fixed;
-    left: -100%;
-    top: 5rem;
-    flex-direction: column;
-    background-color: var(--dark);
-    width: 100%;
-    text-align: center;
-    transition: 0.3s;
-    box-shadow:0 10px 27px rgba(0, 0, 0, 0.05);
-    border-bottom: 3px solid var(--other1);
+    .hamburger.active .bar:nth-child(1) {transform: translateY(8px) rotate(45deg);}
+    .hamburger.active .bar:nth-child(3) {transform: translateY(-8px) rotate(-45deg);}  
+    .hamburger {display: block;}
+    .header-switch {margin-left: 7rem;}
+    .nav-menu.active {left: 0;}
+    .nav-item {margin: 2rem 0;}
 
-}
+    .header {
+        padding: 1rem 1rem 1rem 0rem;
+        justify-content: space-around;
+    }
 
-.bar {
-    display: block;
-    width: 35px;
-    height: 3px;
-    margin: 5px auto;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-    background-color: var(--light);
-}
-.header-switch {margin-left: 7rem;}
-.nav-menu.active {left: 0;}
-.nav-item {margin: 2rem 0;}
-.hamburger {display: block; cursor: pointer; }
-.hamburger.active .bar:nth-child(1) {transform: translateY(8px) rotate(45deg);}
-.hamburger.active .bar:nth-child(3) {transform: translateY(-8px) rotate(-45deg);}  
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 5rem;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
 
-/*--------------------------------------------------------------
->>> NAVIGATION -END
---------------------------------------------------------------*/
+    .bar {
+        display: block;
+        width: 35px;
+        height: 3px;
+        margin: 5px auto;
+        -webkit-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+    }
 }
 /*--------------------------------------------------------------
 >>> 992
 ----------------------------------------------------------------*/
 
 
-
-
 /*--------------------------------------------------------------
 >>> 768
 ----------------------------------------------------------------*/
 @media only screen and (max-width: 768px) {
-/*--------------------------------------------------------------
->>> NAVIGATION
---------------------------------------------------------------*/
-.header-switch {margin-left: 4rem;}
-.header-social {margin-left: 3rem;} 
-/*--------------------------------------------------------------
->>> NAVIGATION - END
---------------------------------------------------------------*/
-/*--------------------------------------------------------------
->>> HERO
---------------------------------------------------------------*/
-.hero-image {height: 60vh;}
-/*--------------------------------------------------------------
->>> HERO - END
---------------------------------------------------------------*/  
+    .header-switch {margin-left: 4rem;}
+    .header-social {margin-left: 3rem;} 
+    .hero-image {height: 60vh;}
 }
 /*--------------------------------------------------------------
 >>> 768
 ----------------------------------------------------------------*/
-
-
-
-
-
-
-
 
 
 /*--------------------------------------------------------------
 >>> 576
 ----------------------------------------------------------------*/
 @media only screen and (max-width: 576px) {
-/*--------------------------------------------------------------
->>> NAVIGATION
---------------------------------------------------------------*/
-.header-social {display: none !important;}
-.header-switch {margin-left: 3rem !important;}
-.nav-item { margin: 1.5rem 0  1.5rem 0;}
-.tooltiptext {display: none;}
-.nav-item {margin: 1rem 0;}
-.special-container {
-    display: flex;
-    justify-content: space-around !important;
-    width: 100%;
-}
-.nav-item .secondary :hover {
-    background-color: var(--light); 
-    padding: 1rem 7rem 1rem 7rem;
-}
-.mobile-social-nav {
-    display:flex;
-    align-content: space-around;
-    padding: 2rem;
-}
-.mobile-social-nav a:first-child{margin-right: 1.5rem;}
-.mobile-social-nav a:last-child{margin-left: 1.5rem;}
-/*--------------------------------------------------------------
->>> NAVIGATION - END
---------------------------------------------------------------*/
-/*--------------------------------------------------------------
->>> HERO
---------------------------------------------------------------*/
-.hero-image {height: 40vh !important;}
-.hero {padding-top: 5rem !important;}
-/*--------------------------------------------------------------
->>> HERO - END
---------------------------------------------------------------*/
-
+    .hero-image {height: 40vh !important;}
+    .hero {padding-top: 5rem !important;}
+    .nav-item .secondary :hover {padding: 1rem 7rem 1rem 7rem;}
+    .header-social {display: none !important;}
+    .header-switch {margin-left: 3rem !important;}
+    .nav-item { margin: 1.5rem 0  1.5rem 0;}
+    .tooltiptext {display: none;}
+    .nav-item {margin: 1rem 0;}
+    .mobile-social-nav {
+        display:flex;
+        justify-content: space-around;
+        padding: 2rem 0;
+        min-width: 100%;
+    }
 }
 /*--------------------------------------------------------------
 >>> 576
