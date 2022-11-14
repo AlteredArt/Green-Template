@@ -66,12 +66,6 @@ class Nav extends HTMLElement{
 
 customElements.define("app-nav", Nav);
 
-// <!-- NAV -->
-// <!-- <ul class='navbar-links nav-menu'> -->
-//     <!-- <li class='nav-item secondary'><a href="./index.html" class='nav-link'>HOME</a></li> -->
-//     <!-- <li class='mobile-social-item'><a href="mailto:knightvisionco@gmail.com"><i class="fa-solid fa-paper-plane  tooltip"><span class="tooltiptext">Mail</span></i></a></li> -->
-
-
 /*--------------------------------------------------------------
 >>> HAMBURGER MOBILE MENU JS
 --------------------------------------------------------------*/
@@ -80,7 +74,6 @@ const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
 const navLink = document.querySelectorAll(".nav-link");
 
-
 hamburger.addEventListener("click", mobileMenu);
 
 function mobileMenu() {
@@ -88,9 +81,7 @@ function mobileMenu() {
     navMenu.classList.toggle("active");
 }
 
-
 navLink.forEach(n => n.addEventListener("click", closeMenu));
-
 
 function closeMenu() {
   hamburger.classList.remove("active");
@@ -114,7 +105,6 @@ function switchTheme(e) {
 }
 
 toggleSwitch.addEventListener('change', switchTheme, false);
-
 
 // REMEMBER THEME PREFERENCE
 function switchTheme(e) {
