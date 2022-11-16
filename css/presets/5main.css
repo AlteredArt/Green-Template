@@ -16,8 +16,8 @@
 .container {
     max-width: 100%;
     min-width: 100%;
-    padding: 0 2rem;
-    padding-block: min(4vh, 10rem);
+    padding: 2rem 2rem;
+    /* padding-block: min(4vh, 10rem); */
 }
 /* PAGE BODY END */
 hr {
@@ -28,13 +28,13 @@ hr {
 }
 /* BUTTONS */
 .btn { 
+    margin: 2rem 0;
     padding: 0.8rem 1.4rem;
     font-size: 1.2rem;
-    /* border: none; */
 }
 
 .space {margin-top: 3rem;}
-FIX GAPS
+
 /* FLEX */
 /* .flex {display: flex; flex-wrap: wrap;} */
 .col {flex-direction: column;}
@@ -62,20 +62,21 @@ FIX GAPS
 >>> LAYOUTS SAVE END
 --------------------------------------------------------------*/
 
-
 /*--------------------------------------------------------------
 >>> HOME
 --------------------------------------------------------------*/
 .contact-info i {margin:1rem 1rem 0 0rem;} 
+.services-list {line-height: 30px;}
 .nachi {max-width: 60%;}
 
 .special {order: 2;}
 
-.services-list > i {margin-right: 1rem 1rem 0 0;}
+.services-list > p > i {margin: 1rem 1rem 0 0;}
 .cert-gallery > div > img {max-width: 50%;}
 
 .contact-form input, textarea {
-    /* width: calc(200px, 50%, 100%); */
+    min-width: 70%;
+    /* min-width: calc(100%, 100%, 100%); */
     margin: 10px 0;
     padding: 16px;
 }
@@ -128,13 +129,6 @@ FIX GAPS
     overflow: hidden;
 } 
 
-/*--------------------------------------------------------------
->>> FAQS - END
---------------------------------------------------------------*/
-
-/*--------------------------------------------------------------
->>> DIY
---------------------------------------------------------------*/
 #diy {scroll-margin-top: 6rem;}
 .diy-intro {padding: 3rem 0;}
 .limitations-list {margin: 0 0 0 4rem;}
@@ -168,9 +162,8 @@ FIX GAPS
     text-decoration: underline;
 }
 /*--------------------------------------------------------------
->>> DIY - END
+>>> FAQS - END
 --------------------------------------------------------------*/
-
 
 /*--------------------------------------------------------------
 >>> SERVICES
@@ -274,7 +267,7 @@ p.thought:after {
 >>> 992
 ----------------------------------------------------------------*/
 @media only screen and (max-width: 992px) {
-    .lists {margin-bottom: 4rem}
+    /* .lists {margin-bottom: 4rem} */
 }
 /*--------------------------------------------------------------
 >>> 992
