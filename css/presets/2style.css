@@ -44,6 +44,9 @@ a {color: var(--light);}
 .header-social i {color: var(--light);}
 .header-social i:hover {color: var(--other1);}
 .navbar-links {color: var(--light);}
+/* MOBILE */
+.nav-menu.active {background-color: var(--dark);}
+.nav-menu.active > li:hover {border: 2px solid var(--light);}
 
 /* SLIDER */
 input:checked + .slider {background-color: var(--light);}
@@ -54,18 +57,18 @@ input:checked + .slider:before {transform: translateX(26px); background-color: v
 .slider:before {background-color: var(--other1);}
 
 /* DROPDOWN */
-ul li ul.dropdown li {display: block;}
-ul li a {color: var(--light);}
-ul li a:hover {color: var(--other1);}
 ul li:hover ul.dropdown {display: block;}
-ul li ul.dropdown {background-color: var(--dark); border: 2px solid var(--other1);}
+ul li ul.dropdown {background-color: var(--light); border: 2px solid var(--other1);}
+.dropdown li a {color: var(--dark) !important;}
+.dropdown li a:hover {color: var(--other1) !important;}
 
 /* TOOLTIP */
-.tooltip .tooltiptext {background-color: var(--light); border: 2px solid var(--dark); color: var(--dark);}
+.tooltip .tooltiptext {background-color: var(--light); border: 2px solid var(--dark); color: var(--dark) !important;}
 
 /* HERO */
-.hero-text h1 {padding-top: 8rem; color: white;}
-.hero-text h2 {padding:2rem 0 8rem 0; color: white;}
+
+.hero-text * {color: white;}
+.hero-text > h2 > span {color: white !important;}
 .hero-image {background: radial-gradient(circle, rgba(255,255,255,0.010224158022584029) 0%, rgba(0,0,0,1) 69%); border-bottom: 5px solid var(--other1);}
 
 /* DEFAULT BODY */
@@ -89,7 +92,7 @@ footer i {color: white !important;}
 /* FOOTER */
 #footer {border-top: 3px solid var(--other1); background-color: black;}
 .sub-footer {background-color: var(--dark); color: var(--light);} 
-#backToTop {color: var(--other1); background-color: var(--light);}
+#backToTop {color: var(--other1); background-color: var(--light); border: 3px solid var(--dark);}
 
 
 /*--------------------------------------------------------------
@@ -130,6 +133,7 @@ footer i {color: white !important;}
 /* SERVICES PAGE */
 #service {background-color: var(--other1);}
 #service * {color: black;}
+/* #services:not(.bubble-title) {color: #00ff00;} */
 .service-info-1 * {color: var(--dark);}
 .service-info-2 * {color: var(--light);}
 .service-container-1 {background-color: var(--light);}
@@ -137,7 +141,7 @@ footer i {color: white !important;}
 /* THOUGHT BUBBLE */
 p.bubble {background-color: var(--dark); border: 8px solid var(--light);}
 p.thought:before, p.thought:after {background-color: var(--dark); border: 8px solid var(--light);}
-.pre-listing > p {color: var(--light) !important;}
+.pre-listing > p, span{color: var(--light) !important;}
 
 
 /* ROOT THEME */
