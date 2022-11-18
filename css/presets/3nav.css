@@ -69,13 +69,13 @@ ul li ul.dropdown {
     position: relative;
     /* top: 60px; */
     /* left: 20px; */
-    margin: 0 auto;
+    /* margin: 0 auto; */
     width: 60px;
 }
 
 /* SLIDER */
-.slider.round {border-radius: 34px;}
-.slider.round:before {border-radius: 50%;}
+.slider.round {border-radius: 0px;}
+.slider.round:before {border-radius: 0%;}
 
 .slider {
     bottom: 0;
@@ -115,6 +115,11 @@ ul li ul.dropdown {
     padding-bottom: 13rem;
 }
 
+.hero-text span {font-size: 1.1rem;}
+
+
+.hero-text h1 {padding-top: 8rem;}
+.hero-text h2 {padding:2rem 0 8rem 0;}
 /*--------------------------------------------------------------
 >>> NAVIGATION MENU - END
 --------------------------------------------------------------*/
@@ -161,13 +166,22 @@ ul li ul.dropdown {
     .hamburger.active .bar:nth-child(1) {transform: translateY(8px) rotate(45deg);}
     .hamburger.active .bar:nth-child(3) {transform: translateY(-8px) rotate(-45deg);}  
     .hamburger {display: block;}
-    .header-switch {margin-left: 7rem;}
+    /* .header-switch {margin-left: 7rem;} */
     .nav-menu.active {left: 0;}
-    .nav-item {margin: 2rem 0;}
-
+    .nav-item {margin: 1.5rem 0;}
+    .nav-menu.active > li {padding: 20px 2rem ;}
     .header {
         padding: 1rem 1rem 1rem 0rem;
         justify-content: space-around;
+    }
+    
+
+    ul li ul.dropdown {
+        padding: 1rem;
+        margin: 2rem 0 0 -1rem;
+        width: auto;
+        height: 60px;
+        text-align: center;
     }
 
     .nav-menu {
@@ -187,6 +201,24 @@ ul li ul.dropdown {
         margin: 5px auto;
         -webkit-transition: all 0.3s ease-in-out;
         transition: all 0.3s ease-in-out;
+    }
+
+    /* SOCIAL LINKS */
+    .header-social {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        min-width: 30%;
+        max-width: 30%;
+    }
+
+    ul li ul.dropdown {
+        padding: 1rem;
+        margin: 0rem auto;
+        width: auto;
+        z-index: 999;
+        position: absolute;
+        display: none;
     }
 }
 /*--------------------------------------------------------------

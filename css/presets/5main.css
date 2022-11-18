@@ -3,7 +3,7 @@
 --------------------------------------------------------------*/
 /* <div class="page-body">
     <div id="example" class="container">
-        <h3 class="title">Even Columns</h3>
+        <h3 class="title"></h3>
         <div class="flex">
             <div></div>
         </div>
@@ -173,10 +173,9 @@ hr {
     height: 550px;
 }
 
-
+.res-intro h3{margin: 2rem 0 0 0;}
 
 /* THOUGHT BUBBLE */
-.thought-bubble strong {text-decoration: underline;}
 
 p.bubble {
     position: relative;
@@ -242,7 +241,9 @@ p.thought:after {
 /*--------------------------------------------------------------
 >>> 1200
 ----------------------------------------------------------------*/
-@media only screen and (max-width: 1200px) {}
+@media only screen and (max-width: 1200px) {
+.other {order:1;}
+}
 /*--------------------------------------------------------------
 >>> 1200
 ----------------------------------------------------------------*/
@@ -277,9 +278,10 @@ p.thought:after {
     .about-text p {padding: 0rem;}
 
     /* .contact-form input, textarea {width: 100%;} */
-    .services-list { margin-left: 1rem;}
+    /* .services-list { margin-left: 1rem;} */
     .services-list li {font-size: 1.2rem;}
-    .services-image img{width: 100%;}
+    .card-image{width: 100%;}
+    .card-image{height: 90%;}
     /* DIY */
     .diy-image {width: 220px; height: 220px;} 
     .panel {padding: 1rem;} 

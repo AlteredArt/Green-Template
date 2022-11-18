@@ -31,7 +31,7 @@ class Nav extends HTMLElement{
 
                 <li class="nav-item secondary" ><a class='nav-link' href="./index.html">HOME</a></li>
                 <li class="nav-item secondary">
-                    <a class='nav-link' href="./services.html">SERVICES</a>
+                    <a class='nav-link ser-link' href="./services.html">SERVICES</a>
                     <ul class="dropdown">
                         <li><a href="/water.html">WATER TESTING</a></li>
                     </ul>
