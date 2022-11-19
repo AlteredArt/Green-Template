@@ -23,7 +23,7 @@ class Footer extends HTMLElement{
 
           </div>
           
-          <div class="sub-footer tac container"><h4>Knight Vision Inspection <span>&#169;</span> 2022</h4></div>
+          <div class="sub-footer tac"><h4>Knight Vision Inspection <span>&#169;</span> 2022</h4></div>
 
         </footer>
     

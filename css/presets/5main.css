@@ -10,6 +10,28 @@
     </div>
 </div> */
 
+/* HERO */
+.hero-image {
+    background-image: url('../../assets/images/hero.png');
+    min-height:600px;
+    max-height: 600px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.hero-text {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-bottom: 13rem;
+}
+
+.hero-text span {font-size: 1.1rem;}
+.hero-text h1 {padding-top: 8rem;}
+.hero-text h2 {padding:2rem 0 8rem 0;}
 /* PAGE BODY */
 .page-body {max-width: 1568px;}
 
@@ -17,7 +39,6 @@
     max-width: 100%;
     min-width: 100%;
     padding: 2rem 2rem;
-    /* padding-block: min(4vh, 10rem); */
 }
 /* PAGE BODY END */
 hr {
@@ -67,6 +88,11 @@ hr {
 .services-list {line-height: 25px;}
 .nachi {max-width: 60%;}
 .special {order: 2;}
+.strong {
+    text-decoration: underline; 
+    margin: 1.5rem 0 0.5rem 0;
+    font-weight: bold;
+}
 .services-list > p > i {margin: 1rem 1rem 0 0;}
 .cert-gallery > div > img {max-width: 50%;}
 
@@ -232,7 +258,15 @@ p.thought:after {
 /*--------------------------------------------------------------
 >>> 1400
 ----------------------------------------------------------------*/
-@media only screen and (max-width: 1400px) {}
+@media only screen and (max-width: 1400px) {
+    .hero {padding-top: 4rem;}
+    .hero-image {
+        width:100% !important;
+        min-width:100% !important;
+        padding-top: 1rem;
+        height: 100vh;
+    } 
+}
 /*--------------------------------------------------------------
 >>> 1400
 ----------------------------------------------------------------*/
@@ -254,6 +288,8 @@ p.thought:after {
 ----------------------------------------------------------------*/
 @media only screen and (max-width: 992px) {
     /* .lists {margin-bottom: 4rem} */
+    .nf {max-width: 200px;}
+
 }
 /*--------------------------------------------------------------
 >>> 992
@@ -263,7 +299,9 @@ p.thought:after {
 /*--------------------------------------------------------------
 >>> 768
 ----------------------------------------------------------------*/
-@media only screen and (max-width: 768px) {}
+@media only screen and (max-width: 768px) {
+    .hero-image {height: 60vh;}
+}
 /*--------------------------------------------------------------
 >>> 768
 ----------------------------------------------------------------*/
@@ -273,18 +311,22 @@ p.thought:after {
 ----------------------------------------------------------------*/
 @media only screen and (max-width: 576px) {
     /* DEFAULT */
-    .title {margin: 1rem 0 1rem 0; text-decoration: underline;}
+    .title {margin: 1rem 0 0.4rem 0; text-decoration: underline;}
     /* ABOUT */
     .about-text p {padding: 0rem;}
+    .nf {max-width: 100px;}
+    .faqs-section {padding: 2rem 0 4rem 0;} 
 
-    /* .contact-form input, textarea {width: 100%;} */
-    /* .services-list { margin-left: 1rem;} */
+  
     .services-list li {font-size: 1.2rem;}
     .card-image{width: 100%;}
     .card-image{height: 90%;}
     /* DIY */
     .diy-image {width: 220px; height: 220px;} 
     .panel {padding: 1rem;} 
+
+    .hero-image {height: 40vh !important;}
+    .hero {padding-top: 5rem !important;}
 }
 /*--------------------------------------------------------------
 >>> 576
